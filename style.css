@@ -1,0 +1,211 @@
+@font-face {
+    font-family: PlayRegular;
+    src: url(fonts/Play-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: PlayBold;
+    src: url(fonts/Play-Bold.ttf);
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #0a0a0a;
+    color: #ccff00;
+    font-family: PlayRegular;
+  }
+
+  .scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 998;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  }
+  
+
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: #22280b;; /* or any color you want */
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px 0;
+    position: relative;
+    font-family: PlayBold;
+    color: #ccff00;
+    animation: glitch 2s infinite;
+  }
+
+  header {
+    transition: transform 0.1s;
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 2px 0 red, -2px 0 cyan;
+      transform: none;
+    }
+    20% {
+      text-shadow: -2px 0 red, 2px 0 cyan;
+      transform: translateX(-1px);
+    }
+    40% {
+      text-shadow: 2px 0 red, -2px 0 cyan;
+      transform: translateX(1px);
+    }
+    60% {
+      text-shadow: 0 0 red, 0 0 cyan;
+      transform: translateX(0);
+    }
+    80% {
+      text-shadow: -1px 0 red, 1px 0 cyan;
+      transform: translateX(-1px);
+    }
+    100% {
+      text-shadow: 1px 0 red, -1px 0 cyan;
+      transform: translateX(1px);
+    }
+  }
+
+  .top-nav {
+    background-color: #0f0f0f;
+    border-top: 2px solid #ccff00;
+    border-bottom: 2px solid #ccff00;
+    text-align: center;
+    padding: 10px 0;
+    font-family: PlayBold;
+    letter-spacing: 1px;
+  }
+  
+  .top-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 20px;
+  }
+  
+  .top-nav li a {
+    text-decoration: none;
+    color: #ccff00;
+    transition: color 0.3s ease;
+  }
+  
+  .top-nav li a:hover {
+    color: #00ffcc;
+  }
+
+  .main-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .navigation {
+    text-align: center;
+  }
+
+.navigation span {
+  font-size: 2rem;
+}
+  
+.navigation ul {
+  list-style-type: none;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.sidebar-left {
+  flex: 0 0 220px;
+  min-width: 180px;
+  max-width: 100%;
+  box-sizing: border-box;
+  border-right: 2px solid #ccff00;
+  padding: 20px;
+  background-color: #0f0f0f;
+  }
+
+.sidebar-right {
+  flex: 0 0 220px;
+  min-width: 180px;
+  max-width: 100%;
+  box-sizing: border-box;
+  border-left: 2px solid #ccff00;
+  padding: 20px;
+  background-color: #0f0f0f;
+}
+
+  .main-wrapper {
+    max-width: 1200px; /* Adjust to your taste */
+    margin: 0 auto;     /* This centers the whole layout */
+    padding: 0 20px;     /* Optional: breathing room on smaller screens */
+    box-sizing: border-box;
+  }
+
+  .main-content {
+    flex: 2;
+    min-width: 0;
+    padding: 20px;
+    text-align: left;
+    font-size: 1em;
+  }
+
+.main-content h1 {
+  text-align: center;
+  font-family: PlayBold;
+  font-size: 2rem;
+}
+  
+  /* Popup notifications */
+  .popup {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0f0f0f;
+    color: #00ffcc;
+    padding: 20px 40px;
+    font-family: PlayBold;
+    font-size: 1.2rem;
+    border: 2px solid #00ffcc;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .popup.show {
+    opacity: 0.8;
+  }
+  
+  .popup.hidden {
+    display: none;
+  }
+  
+  footer {
+    border-top: 1px solid #ccff00;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0f0f0f;
+  }
+ 
+.credits {
+  text-align: center;
+}  
