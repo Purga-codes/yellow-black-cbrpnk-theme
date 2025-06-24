@@ -123,11 +123,19 @@
 .navigation span {
   font-size: 2rem;
 }
-  
+
+.navigation span:hover {
+  color: #00ffcc;
+}
+
 .navigation ul {
   list-style-type: none;
   text-align: left;
   font-size: 1.5rem;
+}
+
+.navigation li:hover {
+  color: #00ffcc;
 }
 
 .sidebar-left {
@@ -150,14 +158,22 @@
   background-color: #0f0f0f;
 }
 
-  .main-wrapper {
-    max-width: 1200px; /* Adjust to your taste */
-    margin: 0 auto;     /* This centers the whole layout */
-    padding: 0 20px;     /* Optional: breathing room on smaller screens */
+.sidebar-right span{
+  font-size: 2rem;
+}
+
+.sidebar-right span:hover {
+  color: #00ffcc;
+}
+
+.main-wrapper {
+    max-width: 1200px; 
+    margin: 0 auto;    
+    padding: 0 20px;  
     box-sizing: border-box;
   }
 
-  .main-content {
+.main-content {
     flex: 2;
     min-width: 0;
     padding: 20px;
@@ -171,40 +187,44 @@
   font-size: 2rem;
 }
   
-  /* Popup notifications */
-  .popup {
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #0f0f0f;
-    color: #00ffcc;
-    padding: 20px 40px;
-    font-family: PlayBold;
-    font-size: 1.2rem;
-    border: 2px solid #00ffcc;
-    z-index: 999;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    text-align: center;
-    letter-spacing: 1px;
-  }
+/* Popup notifications */
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #0f0f0f;
+  color: #00ffcc;
+  padding: 20px 40px;
+  font-family: PlayBold;
+  font-size: 1.2rem;
+  border: 2px solid #00ffcc;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+  letter-spacing: 1px;
+}
   
-  .popup.show {
-    opacity: 0.8;
-  }
+.popup.show {
+  opacity: 0.8;
+}
   
-  .popup.hidden {
-    display: none;
-  }
+.popup.hidden {
+  display: none;
+}
   
-  footer {
-    border-top: 1px solid #ccff00;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-around;
-    background-color: #0f0f0f;
-  }
+footer {
+  border-top: 1px solid #ccff00;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0f0f0f;
+}
+
+footer span:hover {
+  color: #00ffcc;
+}
  
 .credits {
   text-align: center;
