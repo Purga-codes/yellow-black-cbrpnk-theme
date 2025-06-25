@@ -7,4 +7,9 @@ This theme includes:
 - scripts written in js for some popups (if you don't like them, you can just unlink them from an html file and then delete the corresponding file from the folder)
 - folder with fonts used (you can find the exact same fonts on google fonts and link them via url. I myself don't find this method comfortable)
 
+Technologies used:
+- html
+- css
+- vanilla javascript
+
 screenshots: <!--- add later when all this is done! -->
