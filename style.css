@@ -8,13 +8,18 @@
   font-family: PlayBold;
   src: url(fonts/Play-Bold.ttf);
 }
-  
+
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   margin: 0;
   background-color: #0a0a0a;
   color: #ccff00;
   font-family: PlayRegular;
+  scroll-behavior: smooth;
 }
 
 /* for decor of the whole page background */
@@ -170,11 +175,11 @@ header {
 }
 
 .main-wrapper {
-    max-width: 1200px; 
-    margin: 0 auto;    
-    padding: 0 20px;  
-    box-sizing: border-box;
-  }
+  max-width: 1200px; 
+  margin: 0 auto;    
+  padding: 0 20px;  
+  box-sizing: border-box;
+}
 
 .main-content {
     flex: 2;
@@ -234,3 +239,36 @@ footer span:hover {
 .credits {
   text-align: center;
 }  
+
+@media (max-width: 800px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .sidebar-left,
+  .sidebar-right {
+    flex: 1 1 100%;
+    border: none;
+    padding: 10px 0;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  header {
+    font-size: 2rem;
+    padding: 20px 10px;
+  }
+
+  .top-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
