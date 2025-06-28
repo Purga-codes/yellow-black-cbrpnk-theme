@@ -1,7 +1,7 @@
 ## About this website template
 
 > <b>"Yellow-black cbrpnk theme"</b> is a theme for your website designed with Cyberpunk aesthetic (and, specifially, Cyberpunk 2077) in mind.
-In fact, the color theme is loosely inspired by the Cyberpunk 2077's data breach UI.
+<br>In fact, the color theme is loosely inspired by the Cyberpunk 2077's data breach UI.
 
 Since this theme was <b>made for use on neocities/nekoweb/similar websites</b>, <b><i>it is frontend-only</b></i>.
 
@@ -16,5 +16,5 @@ Since this theme was <b>made for use on neocities/nekoweb/similar websites</b>, 
 - <b>css</b>
 - <b>vanilla javascript</b>
 
-## preview:
+## Preview:
 ![preview](preview.jpg)
