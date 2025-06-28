@@ -15,4 +15,4 @@ Technologies used:
 - vanilla javascript
 
 preview:
-[preview] (preview.jpg)
+![preview](preview.jpg)
